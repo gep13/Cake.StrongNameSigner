@@ -1,15 +1,13 @@
 $ErrorActionPreference = 'Stop'
 
-$SCRIPT_NAME = "recipe.cake"
+Set-Location -LiteralPath $PSScriptRoot
 
-Write-Host "Restoring .NET Core tools"
+$env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE = '1'
+$env:DOTNET_CLI_TELEMETRY_OPTOUT = '1'
+$env:DOTNET_NOLOGO = '1'
+
 dotnet tool restore
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-Write-Host "Bootstrapping Cake"
-dotnet cake $SCRIPT_NAME --bootstrap
-if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-Write-Host "Running Build"
-dotnet cake $SCRIPT_NAME @args
+dotnet cake recipe.cake @args
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
