@@ -1,4 +1,5 @@
 using System;
+using Cake.Common.Diagnostics;
 using Cake.Core.IO;
 using Cake.Frosting;
 using Cake.StrongNameSigner;
