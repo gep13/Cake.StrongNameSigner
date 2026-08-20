@@ -1,0 +1,5 @@
+tools/
+!tools/packages.config
+output/
+.vscode/
+_work/

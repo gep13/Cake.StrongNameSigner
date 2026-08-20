@@ -25,6 +25,9 @@ BuildArtifacts/
 [Oo]bj/
 [Bb]in/
 
+# Cake / language-service cache artifacts (created by `dotnet build`)
+*.lscache
+
 # OS Specific files
 *~
 .DS_Store
