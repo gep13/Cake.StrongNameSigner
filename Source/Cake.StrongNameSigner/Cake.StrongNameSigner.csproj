@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -19,8 +19,8 @@
         <PackageIcon>icon.png</PackageIcon>
         <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</PackageIconUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://cake-contrib.github.io/Cake.StrongNameSigner</PackageProjectUrl>
-        <PackageTags>cake;addin;strongnamesigner</PackageTags>
+        <PackageProjectUrl>https://github.com/cake-contrib/Cake.StrongNameSigner</PackageProjectUrl>
+        <PackageTags>cake;cake-build;cake-addin;addin;script;build;strong-name;signing;security</PackageTags>
         <RepositoryUrl>https://github.com/cake-contrib/Cake.StrongNameSigner.git</RepositoryUrl>
         <PackageReleaseNotes>https://github.com/cake-contrib/Cake.StrongNameSigner/releases/tag/$(Version)</PackageReleaseNotes>
     </PropertyGroup>
@@ -35,7 +35,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Cake.Core" Version="0.33.0" PrivateAssets="All" />
+        <PackageReference Include="Cake.Core" Version="1.0.0" PrivateAssets="All" />
         <PackageReference Include="CakeContrib.Guidelines" Version="1.7.0" PrivateAssets="All" />
         <PackageReference Include="IDisposableAnalyzers" Version="4.0.8">
           <PrivateAssets>all</PrivateAssets>
