@@ -1,4 +1,4 @@
-#reference "BuildArtifacts/temp/_PublishedLibraries/Cake.StrongNameSigner/netstandard2.0/Cake.StrongNameSigner.dll"
+#reference "../../BuildArtifacts/temp/_PublishedLibraries/Cake.StrongNameSigner/netstandard2.0/Cake.StrongNameSigner.dll"
 
 using Cake.StrongNameSigner;
 
